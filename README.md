@@ -1,198 +1,253 @@
-🎯 AI Resume Interview Generator
+# 🎯 AI Resume Interview Generator
 
-An AI-powered Resume Analysis and Interview Preparation platform built using Python, Streamlit, Google Gemini AI, and SQLite.
+<p align="center">
 
-The application analyzes resumes, generates ATS scores, provides recruiter feedback, creates company-specific interview questions, and offers an interactive mock interview experience.
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge\&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge\&logo=streamlit)
+![Gemini](https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge\&logo=google)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge\&logo=sqlite)
 
-⸻
+</p>
 
-🚀 Features
+<p align="center">
+An AI-powered Resume Analysis & Interview Preparation Platform built with <b>Python</b>, <b>Streamlit</b>, <b>Google Gemini AI</b>, and <b>SQLite</b>.
+</p>
 
-📄 Resume Analysis
+<p align="center">
 
-* Upload resumes in PDF format
-* Extracts text automatically
+🔗 **Live Demo:** https://ai-resume-interview-generator-fefjeqxorjqjkwcgxsxz9d.streamlit.app/
+
+</p>
+
+---
+
+# 📖 Overview
+
+AI Resume Interview Generator helps students and job seekers prepare for technical interviews by analyzing resumes using Google's Gemini AI.
+
+The application generates:
+
+* 📊 ATS Score
+* 💼 Recruiter Feedback
+* 🎯 Company-specific Interview Questions
+* 🧠 Technical & DSA Questions
+* 🎤 AI Mock Interview Evaluation
+* 📄 Downloadable Interview Reports
+
+---
+
+# ✨ Features
+
+## 📄 Resume Analysis
+
+* Upload Resume in PDF format
+* Automatic text extraction
 * AI-powered resume evaluation
 
-📊 ATS Score Generator
+## 📊 ATS Score Analysis
 
-* Calculates ATS compatibility score
-* Highlights strengths and weaknesses
-* Provides improvement suggestions
+* ATS Compatibility Score
+* Resume Strengths
+* Weaknesses
+* Resume Improvement Suggestions
 
-🎯 Company-Specific Interview Questions
+## 💼 Company-Specific Interview Questions
 
-Supports interview preparation for:
+Choose from:
 
+* General
 * TCS Digital
 * Infosys
 * Accenture
 * Amazon
 * Google
 * Microsoft
-* General Interviews
 
-💼 Interview Preparation
+## 🎯 AI Interview Generator
 
-Generates:
+Automatically generates:
 
-* HR Questions
+* HR Interview Questions
 * Technical Questions
 * Project-Based Questions
 * DSA Questions
 
-🎤 Mock Interview Mode
+## 🎤 AI Mock Interview
 
-* Generate AI interview questions
+* Generate interview questions
 * Submit answers
-* Receive detailed feedback
-* Score-based evaluation
+* AI evaluates your response
+* Strengths & Weaknesses
+* Improved Answer
+* Score out of 10
 
-📑 Report Generation
+## 📑 Report Generation
 
-* Download Interview Report as TXT
-* Download Interview Report as PDF
+* TXT Report
+* PDF Report
 
-🗄️ Report History
+## 🗄️ Report History
 
 * Stores previous reports
-* ATS score tracking
-* Resume history management using SQLite
+* ATS Score History
+* SQLite Database Integration
 
-⸻
+---
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-Frontend
+| Category       | Technology       |
+| -------------- | ---------------- |
+| Language       | Python           |
+| Frontend       | Streamlit        |
+| AI Model       | Google Gemini AI |
+| Database       | SQLite           |
+| PDF Processing | PyPDF            |
+| PDF Export     | ReportLab        |
 
-* Streamlit
+---
 
-Backend
+# 📂 Project Structure
 
-* Python
-
-AI Model
-
-* Google Gemini API
-
-Database
-
-* SQLite
-
-PDF Processing
-
-* PyPDF
-
-PDF Export
-
-* ReportLab
-
-⸻
-
-📂 Project Structure
-
+```text
 AI-Resume-Interview-Generator/
 │
-├── app.py
-├── database.py
-├── prompts.py
-├── utils.py
-├── requirements.txt
-├── README.md
-├── .gitignore
+├── app.py                  # Main Streamlit application
+├── database.py             # SQLite database operations
+├── prompts.py              # AI prompt templates
+├── utils.py                # PDF text extraction utilities
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── .gitignore              # Git ignore rules
+├── .streamlit/
+│   └── config.toml
 │
 └── data/
+    └── database.db
+```
 
-⚙️ Installation
+---
 
-Clone Repository
+# 🚀 Getting Started
 
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Vienna3007/AI-Resume-Interview-Generator.git
+
 cd AI-Resume-Interview-Generator
+```
 
-Create Virtual Environment
+---
 
+## 2️⃣ Create Virtual Environment
+
+```bash
 python -m venv venv
+```
 
-Activate Environment
+Activate the environment (Windows):
 
-Windows:
-
+```bash
 venv\Scripts\activate
+```
 
-Install Dependencies
+---
 
+## 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-⸻
+---
 
-🔑 Environment Variables
+## 4️⃣ Configure Environment Variables
 
-Create a .env file:
+Create a `.env` file in the project root:
 
+```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+```
 
-Get your Gemini API Key from:
+Generate your API key from:
 
 https://aistudio.google.com/app/apikey
 
-⸻
+---
 
-▶️ Run Application
+## 5️⃣ Run the Application
 
+```bash
 streamlit run app.py
+```
 
-⸻
+---
 
-📸 Application Workflow
+# 📸 Application Workflow
 
-1. Upload Resume (PDF)
-2. Extract Resume Content
-3. Generate ATS Score
-4. Receive Recruiter Feedback
-5. Generate Interview Questions
-6. Practice Mock Interviews
-7. Download Report
-8. Review History
+```text
+Upload Resume
+      │
+      ▼
+Extract PDF Text
+      │
+      ▼
+Gemini AI Analysis
+      │
+      ▼
+ATS Score Generation
+      │
+      ▼
+Interview Questions
+      │
+      ▼
+Mock Interview
+      │
+      ▼
+Download Report
+```
 
-⸻
+---
 
-🎯 Future Improvements
+# 🔮 Future Enhancements
 
-* Resume Skill Gap Analysis
-* Resume Keyword Optimization
-* Multiple Resume Comparison
-* Voice-Based Mock Interviews
-* Interview Performance Analytics
-* AI Career Roadmap Generator
-* Multi-Language Resume Support
+* 🎙️ Voice-Based Mock Interviews
+* 📈 Resume Skill Gap Analysis
+* 📊 Interview Performance Dashboard
+* 🌐 Multi-Language Resume Support
+* 🤖 AI Career Roadmap Generator
+* 📑 Resume Comparison
+* ☁️ Cloud Database Integration
 
-⸻
+---
 
-👩‍💻 Author
+# 👩‍💻 Author
 
-Pydi Sri Vaishnavi
+**Pydi Sri Vaishnavi**
 
-B.Tech CSE (Artificial Intelligence)
+B.Tech – Computer Science & Engineering (Artificial Intelligence)
 
-GitHub: https://github.com/Vienna3007
+🔗 GitHub: https://github.com/Vienna3007
 
-LinkedIn: https://linkedin.com/in/pydisrivaishnavi
+🔗 LinkedIn: https://linkedin.com/in/pydisrivaishnavi
 
-⸻
+---
 
-⭐ Support
+# ⭐ Show Your Support
 
-If you found this project useful:
+If you found this project helpful:
 
-⭐ Star the repository
+⭐ Star this repository
 
-🍴 Fork the repository
+🍴 Fork this repository
 
-📢 Share it with others
+💡 Share your feedback and suggestions
 
-⸻
+---
 
-🔗 Live App: https://ai-resume-interview-generator-fefjeqxorjqjkwcgxsxz9d.streamlit.app/
+<p align="center">
 
-Built with ❤️ using Python, Streamlit and Google Gemini AI.
+Made with ❤️ using **Python**, **Streamlit**, and **Google Gemini AI**
+
+</p>
